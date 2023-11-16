@@ -11,6 +11,7 @@ function Navbar() {
        </div>
 
       <NavElements/>
+      <span className="menu-icon" >&#9776;</span>
 
     </div>
   );

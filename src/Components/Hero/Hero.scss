@@ -63,11 +63,11 @@
             background: #6a45ff;
             min-width: 100vw;
             font-family: Noto Sans;
-            font-size: calc(32 * 100 / 1920) + vw;
+            font-size: 32px;
             font-style: normal;
             font-weight: 600;
             line-height: 160%;
-            letter-spacing: calc(9.6 * 100 / 1920) + vw;
+            letter-spacing: 9.6px;
         }
 
         .hero-desc-para {
@@ -75,11 +75,11 @@
             text-align: center;
             margin-top: calc(29 * 100 / 1080) + vh;
             font-family: Noto Sans;
-            font-size: calc(20 * 100 / 1920) + vw;
+            font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: 160%;
-            letter-spacing: calc(6 * 100 / 1920) + vw;
+            letter-spacing: 6px;
         }
     }
 
@@ -94,11 +94,11 @@
             color: #FFF;
             text-align: center;
             font-family: Noto Sans;
-            font-size: calc(16 * 100 / 1920) + vw;
+            font-size: 16px;
             font-style: normal;
             font-weight: 600;
             line-height: 160%;
-            letter-spacing: calc(4.8 * 100 / 1920) + vw;
+            letter-spacing: 4.8px;
         }
     }
 }

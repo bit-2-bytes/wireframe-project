@@ -3,12 +3,12 @@
 .third-page-container {
   display: flex;
   flex-direction: column;
-  // padding: calc(200 * 100 / 1920) + vw 0px;
   justify-content: center;
   align-items: center;
   gap: 120px;
   align-self: stretch;
   background: #dce1e6;
+  height: max-content;
 
   .blue-column {
     width: calc(280 * 100 / 1920) + vw;
@@ -47,7 +47,7 @@
     @media screen and (max-width: $layout-breakpoint-more-small) {
       margin-left: -10px; 
       transform: translateX(-50%); 
-      min-width: 80vw;
+      min-width: 90vw;
       gap :4px;
     }
 

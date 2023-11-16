@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 .card-container {
   display: flex;
   height: calc(600 * 100 / 1080) + vh;
@@ -9,15 +10,24 @@
   background-color: lightgray;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: $layout-breakpoint-more-small) {
+    min-height: 256px;
+    width: 80vw;
+    align-items: center;
+    // transform: translateX(-25vw);
+  }
   .card-number {
     color: #fff;
     text-align: center;
     font-family: Noto Sans;
-    font-size: calc(24 * 100 / 1920) + vw;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
-    letter-spacing: calc(7.2 * 100 / 1920) + vw;
+    letter-spacing: 7.2px;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      display: none;
+    }
   }
 
   .card-heading {
@@ -25,11 +35,15 @@
     color: #fff;
     text-align: center;
     font-family: Noto Sans;
-    font-size: calc(32 * 100 / 1920) + vw;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%; 
-    letter-spacing: calc(9.6 * 100 / 1920) + vw;
+    letter-spacing: 9.6px;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      font-size: 20px;
+      letter-spacing: 6px;
+    }
   }
 
   .card-description {
@@ -37,10 +51,15 @@
     color: #FFF;
     text-align: center;
     font-family: Noto Sans;
-    font-size: calc(20 * 100 / 1920) + vw;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
-    letter-spacing: calc(1 * 100 / 1920) + vw;
+    letter-spacing: 1px;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      max-width: 60vw;
+    }
   }
 }

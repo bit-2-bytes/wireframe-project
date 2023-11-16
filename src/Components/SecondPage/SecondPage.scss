@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .page-container {
   display: flex;
   height: calc(1174 * 100 / 1080) + vh;
@@ -13,6 +15,10 @@
     height: calc(1174 * 100 / 1080) + vh;
     background: #6a45ff;
     left: calc(820 * 100 / 1920) + vw;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      background: rgba(106, 69, 255, 0.24);
+      width: 40px;
+    }
   }
 
   .cards-container {
@@ -22,6 +28,11 @@
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      padding: 0px 32px;
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 
   .page-desc-container {
@@ -35,11 +46,16 @@
       text-align: center;
       margin-top: calc(200 * 100 / 1080) + vh;
       font-family: Noto Sans;
-      font-size: calc(40 * 100 / 1920) + vw;
+      font-size: 40px;
       font-style: normal;
       font-weight: 600;
       line-height: 160%;
-      letter-spacing: calc(12 * 100 / 1920) + vw;
+      letter-spacing: 12px;
+      @media screen and (max-width: $layout-breakpoint-more-small) {
+        color: #6A45FF;
+        font-size:24px ;
+        margin-top: 80px;
+      }
     }
 
     .page-desc-subtitle {
@@ -47,11 +63,15 @@
       text-align: center;
       margin-bottom: calc(64 * 100 / 1080) + vh;
       font-family: Noto Sans;
-      font-size: calc(24 * 100 / 1920) + vw;
+      font-size: 24px;
       font-style: normal;
       font-weight: 600;
       line-height: 160%;
-      letter-spacing: calc(7.2 * 100 / 1920) + vw;
+      letter-spacing: 7.2px;
+      @media screen and (max-width: $layout-breakpoint-more-small) {
+        color: black;
+        font-size:20px ;
+      }
     }
   }
 }

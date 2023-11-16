@@ -1,10 +1,12 @@
+@import "../../variables.scss";
+
 .third-page-container {
   display: flex;
   flex-direction: column;
   // padding: calc(200 * 100 / 1920) + vw 0px;
   justify-content: center;
   align-items: center;
-  gap: calc(120 * 100 / 1920) + vw;
+  gap: 120px;
   align-self: stretch;
   background: #dce1e6;
 
@@ -13,6 +15,10 @@
     height: calc(840 * 100 / 1080) + vh;
     background: #6a45ff;
     left: calc(820 * 100 / 1920) + vw;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      background: rgba(106, 69, 255, 0.24);
+      width: 40px;
+    }
   }
 
   .third-page-image {
@@ -23,6 +29,11 @@
     background-size: cover;
     margin-top: calc(200 * 100 / 1080) + vh;
     margin-left: calc(-550 * 100 / 1920) + vw;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      height: 200px;
+      transform: translateX(-50%);
+      width: 350px;
+    }
   }
 
   .third-page-content {
@@ -31,42 +42,62 @@
     margin-top: calc(-440 * 100 / 1080) + vh;
     flex-direction: column;
     align-items: flex-start;
-    gap: calc(32 * 100 / 1920) + vw;
-    width: calc(440 * 100 / 1920) + vw;
+    gap: $heading-font;
+    width: calc(600 * 100 / 1920) + vw;
+    @media screen and (max-width: $layout-breakpoint-more-small) {
+      margin-left: -10px; 
+      transform: translateX(-50%); 
+      min-width: 80vw;
+      gap :4px;
+    }
 
     .third-page-line {
       border: 4px solid #6a45ff;
-      width: calc(440 * 100 / 1920) + vw;
+      width: calc(600 * 100 / 1920) + vw;
+      @media screen and (max-width: $layout-breakpoint-more-small) {
+        min-width: 80%;
+      }
     }
 
     .third-page-heading {
       color: #000;
       font-family: Noto Sans;
-      font-size: calc(32 * 100 / 1920) + vw;
+      font-size: $heading-font;
       font-style: normal;
       font-weight: 600;
       line-height: 160%;
-      letter-spacing: calc(9.6 * 100 / 1920) + vw;
+      letter-spacing: 9.6px;
+      @media screen and (max-width: $layout-breakpoint-small) {
+        font-size: 20px;
+        letter-spacing: 6px;
+      }
+      
     }
     .third-page-description {
       color: rgba(0, 0, 0, 0.8);
       font-family: Noto Sans;
-      font-size: calc(16 * 100 / 1920) + vw;
+      font-size: $description-font;
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 24px */
-      letter-spacing: calc(0.8 * 100 / 1920) + vw;
+      letter-spacing: 0.8px;
+      @media screen and (max-width: $layout-breakpoint-small) {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+      }
+      @media screen and (max-width: $layout-breakpoint-more-small) {
+        padding-top: 250px;
+      }
     }
     .third-page-link {
       color: #000;
       text-align: center;
       font-family: Noto Sans;
-      font-size: calc(16 * 100 / 1920) + vw;
+      font-size: $description-font;
       font-style: normal;
-      padding-top: calc(32 * 100 / 1080) + vh;
       font-weight: 600;
       line-height: 160%;
-      letter-spacing: calc(4.8 * 100 / 1920) + vw;
+      letter-spacing: $heading-spacing;
     }
   }
 }

@@ -1,0 +1,57 @@
+.page-container {
+  display: flex;
+  height: calc(1174 * 100 / 1080) + vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(64 * 100 / 1920) + vw;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  .blue-column {
+    width: calc(280 * 100 / 1920) + vw;
+    height: calc(1174 * 100 / 1080) + vh;
+    background: #6a45ff;
+    left: calc(820 * 100 / 1920) + vw;
+  }
+
+  .cards-container {
+    display: flex;
+    width: 100vw;
+    margin-left: calc(-820 * 100 / 1920) + vw;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  .page-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(8 * 100 / 1920) + vw;
+
+    .page-desc-haeding {
+      color: #fff;
+      text-align: center;
+      margin-top: calc(200 * 100 / 1080) + vh;
+      font-family: Noto Sans;
+      font-size: calc(40 * 100 / 1920) + vw;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: calc(12 * 100 / 1920) + vw;
+    }
+
+    .page-desc-subtitle {
+      color: #fff;
+      text-align: center;
+      margin-bottom: calc(64 * 100 / 1080) + vh;
+      font-family: Noto Sans;
+      font-size: calc(24 * 100 / 1920) + vw;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: calc(7.2 * 100 / 1920) + vw;
+    }
+  }
+}

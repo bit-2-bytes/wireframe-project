@@ -1,0 +1,46 @@
+.card-container {
+  display: flex;
+  height: calc(600 * 100 / 1080) + vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(40 * 100 / 1920) + vw;
+  flex: 1 0 0;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .card-number {
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: calc(24 * 100 / 1920) + vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: calc(7.2 * 100 / 1920) + vw;
+  }
+
+  .card-heading {
+    max-width: calc(449.044 * 100 / 1920) + vw;
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: calc(32 * 100 / 1920) + vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+    letter-spacing: calc(9.6 * 100 / 1920) + vw;
+  }
+
+  .card-description {
+    max-width: calc(434 * 100 / 1920) + vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: calc(20 * 100 / 1920) + vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: calc(1 * 100 / 1920) + vw;
+  }
+}
